@@ -7,9 +7,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                apt update
-                apt upgrade -y
-                apt-get install python3 -y
+                sudo apt update
+                sudo apt upgrade -y
+                sudo apt-get install python3 -y
                 '''
             }
         }
