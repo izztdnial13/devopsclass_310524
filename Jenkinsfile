@@ -7,6 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
+                sudo -s
                 sudo apt update
                 sudo apt upgrade -y
                 sudo apt-get install python3 -y
